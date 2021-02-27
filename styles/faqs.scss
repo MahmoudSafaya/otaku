@@ -1,0 +1,56 @@
+@import 'variables';
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.FAQs{
+  margin: 100px auto;
+
+  h1{
+    font-size: 42px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  .question{
+    width: 100%;
+    background: #f6f6f6;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px 0;
+
+    h2{
+      display: inline-block;
+    }
+
+    span{
+      float: right;
+      font-size: 32px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      
+      &:hover{
+        color: $blue;
+        transform: rotate(180deg)
+      }
+    }
+
+    p{
+      margin: 40px 0 30px;
+      text-align: justify;
+      line-height: 1.6;
+      letter-spacing: 1px;
+      color: $light_dark;
+      display: none;
+    }
+  }
+}
