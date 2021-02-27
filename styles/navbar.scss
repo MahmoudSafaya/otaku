@@ -35,11 +35,6 @@ header{
         margin: 0px 15px;
         font-size: 20px;
 
-        &:last-of-type{
-          width: 35px;
-          height: 35px;
-        }
-
         a{
           color: #eee;
 
@@ -66,4 +61,23 @@ header{
 
 .active_nav_link{
   color: $blue !important;
+}
+
+.menu{
+  display: none;
+  cursor: pointer;
+
+  i{
+    font-size: 32px;
+    color: white;
+  }
+}
+
+.close{
+  display: none;
+  font-size: 42px;
+  color: red;
+  cursor: pointer;
+  text-align: right;
+  margin: 30px 50px;
 }

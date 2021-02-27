@@ -12,8 +12,8 @@ menu.addEventListener('click', () => {
 });
 
 close.addEventListener('click', () => {
-  nav.style.display = 'none';
   menu.style.display = 'block';
+  nav.style.display = 'none';
   close.style.display = 'none';
 });
 
@@ -90,7 +90,6 @@ const headline = document.querySelectorAll('#headlines_ul li');
 const box_blue_btn = document.querySelectorAll('.box_blue_btn');
 const box_red_btn = document.querySelectorAll('.box_red_btn');
 const headline_h1 = document.querySelectorAll('#headline_h1');
-console.log(box_red_btn);
 
 headline.forEach(element => {
   element.addEventListener('click', () => {
@@ -100,7 +99,6 @@ headline.forEach(element => {
     }
     element.classList.add('active');
     // loop to display all box that matches with the headline
-    let k=0;
     for(let i=0; i<box_blue_btn.length; i++) {
       if(element.textContent === 'All'){
         box_blue_btn[i].parentElement.parentElement.style.display = 'block';
@@ -119,22 +117,6 @@ headline.forEach(element => {
           }
 
         } else {
-          //show featured or popular boxes
-          if(box_red_btn[k].textContent === element.textContent){
-            box_red_btn[k].parentElement.parentElement.style.display = 'inline-block';
-            k++
-            if(k > box_red_btn.length - 1) k=0;
-            // loop to delete all h1
-            for(let i=0; i<headline_h1.length; i++) {
-              headline_h1[i].style.display = 'none';
-            }
-
-          } else {
-            //hide featured or popular boxes
-            box_red_btn[k].parentElement.parentElement.style.display = 'none';
-            k++
-            if(k > box_red_btn.length - 1) k=0;
-          }
           //hide boxes that is not included
           box_blue_btn[i].parentElement.parentElement.style.display = 'none';
         }
@@ -143,3 +125,23 @@ headline.forEach(element => {
 
   });
 });
+
+// Featured and Popular headline btns
+const unique = document.querySelectorAll('#unique');
+unique.forEach(env => {
+  env.addEventListener('click', () => {
+    //show featured or popular boxes
+    for(let i=0; i<box_red_btn.length; i++){
+      if(box_red_btn[i].textContent === env.textContent){
+        box_red_btn[i].parentElement.parentElement.style.display = 'block';
+        // loop to delete all h1
+        for(let i=0; i<headline_h1.length; i++) {
+          headline_h1[i].style.display = 'none';
+        }
+      } else {
+        //hide featured or popular boxes
+        box_red_btn[i].parentElement.parentElement.style.display = 'none';
+      }
+    }
+  })
+})

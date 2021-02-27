@@ -1,0 +1,145 @@
+@import 'variables';
+
+@media only screen and (max-width: 520px) {
+  .menu{
+    display: block;
+  }
+  header{
+    nav{ 
+      z-index: 1000;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #eee;
+      text-align: center;
+      top: 0;
+      left: 0;
+      display: none;
+  
+      ul{
+        margin-top: 25px;
+        
+        li{
+          margin: 50px 0px;
+          font-size: 18px;
+          display: block;
+  
+          a{
+            color: #010101;
+            font-size: 22px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .fa-search{
+        display: block;
+        width: 50px;
+        margin: 0 auto;
+        font-size: 22px;
+      }
+    }
+  }
+
+  // landing content responsive
+  .landing_content{
+    .after_nav{
+      margin: 40px auto;
+      .info_section{
+        width: 100%;
+        margin-right: 40px;
+        float: none;
+        p{
+          margin: 15px 0px 40px;
+          font-size: 26px;
+          font-weight: 600;
+        }
+      }
+      .slider_section{
+        display: none;
+      }
+      // slider bullets
+      .to_slide_bullets{
+        display: none;
+      }
+    }
+  }
+
+
+  // style of the world section and other like
+  .world_content,
+  .gallery,
+  .the_blog,
+  .the_second_blog{
+    margin: 80px auto !important;
+
+    .boxies_container,
+    .wide_blog_imgs,
+    .small_blog_imgs{
+      width: 85%;
+      margin: 0 auto;
+
+      .box{
+        width: 100%;
+        margin: 20px auto;
+        display: block;        
+      }
+    }
+  }
+
+
+  //style of the subscribe section
+  .subscribe{
+    width: 85%;
+    h1{
+      font-size: 35px;
+    }
+    p{
+      width: 100%;
+    }
+    form{
+      input{
+        width: 62%;
+      }
+    }
+  }
+
+
+  // style of footer
+  footer{
+    padding: 30px 0;
+
+    p{
+      color: #666;
+      margin: 10px 0;
+    }
+
+    .up_footer{
+      justify-content: center;
+      flex-direction: column;
+
+      .logo_p{
+        width: 100%;
+        p{
+          font-size: 14px;
+        }
+      }
+      li{
+        font-size: 12px;
+      }
+      .blue_btn{
+        margin-left: 0px;
+        padding: 5px 10px;
+      }
+    }
+
+    .down_footer{
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+
+
+
+}
