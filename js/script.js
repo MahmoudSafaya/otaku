@@ -1,22 +1,3 @@
-//code of the nav
-const menu = document.querySelector('.menu');
-const nav = document.querySelector('nav');
-const close = document.querySelector('.close');
-
-menu.addEventListener('click', () => {
-
-  menu.style.display = 'none';
-  nav.style.display = 'block';
-  close.style.display = 'block';
-
-});
-
-close.addEventListener('click', () => {
-  menu.style.display = 'block';
-  nav.style.display = 'none';
-  close.style.display = 'none';
-});
-
 
 // click plus to see the answer
 const plus = document.querySelectorAll('.question span');
@@ -62,7 +43,7 @@ readArticle.forEach(element => {
     let imageSrc = imageParent.firstElementChild.getAttribute('src');
     //check if you at index or blog page
     //result if false returns -1 / if true returns 68_the index
-    if(location.pathname.search('pages/blog.html') > 1){ 
+    if(location.pathname.search('pages/blog.html') > 0){ 
       //delete the first index (.) so that the img src is correct
       const theImageSrc = imageSrc.substring(1);
       //put image src at the localStorage

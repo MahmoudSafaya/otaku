@@ -9,28 +9,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/media.css" type="text/css">
   <link rel="stylesheet" href="../styles/faqs.css">
-  <link rel="stylesheet" href="./styles/responsive.css">
-
 </head>
 <body>
 
 
-  <header class="container">
-    <!-- navbar code -->   
-    <div class="logo">
-      <span class="blue_span">it</span>.otaku
+  <header id="navbar_menu">
+    <div class="container">
+      <!-- navbar code -->   
+      <div class="logo">
+        <span class="blue_span">it</span>.otaku
+      </div>
+      <nav>
+        <div class="close">&times;</div>
+        <ul id="navbar_list" class="blog_ul_li_a">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/blog.html">Blog</a></li>
+          <li><a href="../pages/faqs.html" class="active_nav_link">FAQs</a></li>
+        </ul>
+        <i class="fas fa-search blue_span"></i>
+      </nav>
+      <div class="menu"><i class="fas fa-bars"></i></div>
     </div>
-    <nav>
-      <div class="close">&times;</div>
-      <ul class="blog_ul_li_a">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/blog.html">Blog</a></li>
-        <li><a href="../pages/faqs.html" class="active_nav_link">FAQs</a></li>
-      </ul>
-      <i class="fas fa-search blue_span"></i>
-    </nav>
-    <div class="menu"><i class="fas fa-bars"></i></div>
   </header>
   
 
@@ -107,6 +108,7 @@
 
 
   <script src="https://kit.fontawesome.com/951a4a044c.js" crossorigin="anonymous"></script>
+  <script src="../js/navbar.js"></script>
   <script src="../js/script.js"></script>
 </body>
 </html>

@@ -9,28 +9,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/navbar.css">
-  <link rel="stylesheet" href="./styles/responsive.css">
+  <link rel="stylesheet" href="./styles/media.css">
 </head>
 <body>
 
   <!-- navbar and first home page content -->
   <article class="landing_content" style="background-image: url('./images/background.jpg');">
     <div class="overlay">
-      <header class="container">
-        <!-- navbar code -->   
-        <div class="logo">
-          <span class="blue_span">it</span>.otaku
+      <header id="navbar_menu">
+        <div class="container">
+          <!-- navbar code -->   
+          <div class="logo">
+            <span class="blue_span">it</span>.otaku
+          </div>
+          <nav>
+            <div class="close">&times;</div>
+            <ul id="navbar_list">
+              <li><a href="index.html" class="active_nav_link">Home</a></li>
+              <li><a href="./pages/blog.html">Blog</a></li>
+              <li><a href="./pages/faqs.html">FAQs</a></li>
+            </ul>
+            <i class="fas fa-search blue_span"></i>
+          </nav>
+          <div class="menu"><i class="fas fa-bars"></i></div>
         </div>
-        <nav>
-          <div class="close">&times;</div>
-          <ul>
-            <li><a href="index.html" class="active_nav_link">Home</a></li>
-            <li><a href="./pages/blog.html">Blog</a></li>
-            <li><a href="./pages/faqs.html">FAQs</a></li>
-          </ul>
-          <i class="fas fa-search blue_span"></i>
-        </nav>
-        <div class="menu"><i class="fas fa-bars"></i></div>
       </header>
       <!-- content of the under navbar -->
       <article class="after_nav container">
@@ -240,6 +242,7 @@
 
   <script src="https://kit.fontawesome.com/951a4a044c.js" crossorigin="anonymous"></script>
   <script src="./js/miniSlider.js"></script>
+  <script src="./js/navbar.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,12 +1,22 @@
 @import 'variables';
 
 @media only screen and (max-width: 520px) {
+  .container{
+    width: 85% !important;
+  }
   .menu{
     display: block;
   }
   header{
+    position: fixed;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 20px 0;
+
+
     nav{ 
-      z-index: 1000;
       position: fixed;
       width: 100%;
       height: 100%;
@@ -44,7 +54,9 @@
   // landing content responsive
   .landing_content{
     .after_nav{
-      margin: 40px auto;
+      padding-top: 140px;
+      margin: 0 auto;
+
       .info_section{
         width: 100%;
         margin-right: 40px;
@@ -90,7 +102,6 @@
 
   //style of the subscribe section
   .subscribe{
-    width: 85%;
     h1{
       font-size: 35px;
     }
@@ -140,6 +151,124 @@
     }
   }
 
+  // .......... the blog media query style ...........
+  //headlines
+  .headlines{
+    margin: 100px auto 40px;
+  
+    ul{
+      float: none;
+      display: block;
+      text-align: center;
+  
+      li{
+        padding: 10px 12px;
+        margin: 10px 5px;
+        display: inline-block;
+        font-size: 14px;
+      }
+    }
+  }
 
+  // style of the blog
+  .the_blog,
+  .the_second_blog{
+    padding: 100px auto;
+
+    .wide_blog_imgs{
+      width: 85%;
+      float: none;
+
+      .box{
+        width: 100%;
+      }
+      .box:first-of-type{
+        .box_image:first-of-type{
+          height: auto;
+        }
+      }
+    }
+
+    .small_blog_imgs{
+      width: 85%;
+      float: none;
+
+      .box{
+        margin: 20px 0px;
+        .box_image,
+        .box_info_div{
+          width: 100%;
+          margin: 0px;
+        }
+
+        &:first-of-type,
+        &:nth-of-type(5){
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+
+  // ................... FAQs media query style .................
+  //FAQs
+  .FAQs{
+    margin: 100px auto;
+  
+    h1{
+      font-size: 38px;
+    }
+  
+    .question{
+  
+      h2{
+        display: inline-block;
+        font-size: 18px;
+        width: 90%;
+      }
+  
+      span{
+        float: right;
+        font-size: 32px;
+        width: 7%;
+      }
+    }
+  }
+
+
+
+
+  // ................... Any article style ..............
+  .the_article{
+
+    .wide_article_imgs{
+      width: 100%;
+      float: none;
+      padding: 40px 0;
+      p{
+        margin-bottom: 60px !important;
+      }
+    }
+  
+    .small_article_imgs{
+      width: 100%;
+      float: none;
+      padding: 30px 20px;
+      margin-left: 0px;
+  
+      h1{
+        font-size: 38px;
+      }
+    }
+  }
+  
+
+  // style of like_not_like
+  .like_not_like{
+    margin: 100px auto;
+    h1{
+      font-size: 42px;
+    }
+  }
 
 }

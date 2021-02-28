@@ -105,6 +105,16 @@ img {
   background: #d81e1e;
 }
 
+.black_logo_text,
+.black_menu {
+  color: #222 !important;
+}
+
+.black_logo_text i,
+.black_menu i {
+  color: #222;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -114,6 +124,14 @@ img {
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  color: #fff;
+}
+
+.menu i {
+  color: #fff;
 }
 
 .landing_content {

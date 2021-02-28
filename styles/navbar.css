@@ -105,6 +105,16 @@ img {
   background: #d81e1e;
 }
 
+.black_logo_text,
+.black_menu {
+  color: #222 !important;
+}
+
+.black_logo_text i,
+.black_menu i {
+  color: #222;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -115,36 +125,32 @@ img {
 
 /*Style of the logo and navbar*/
 header {
+  padding: 30px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 30px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .logo {
   display: inline-block;
-  width: 210px;
-  height: 60px;
-}
-
-header .logo img {
-  opacity: 0.9;
 }
 
 header nav ul {
-  list-style: none;
   display: inline-block;
 }
 
 header nav ul li {
-  display: inline-block;
   margin: 0px 15px;
   font-size: 20px;
 }
@@ -176,7 +182,6 @@ header nav ul.blog_ul_li_a li a:hover {
 
 .menu i {
   font-size: 32px;
-  color: white;
 }
 
 .close {
