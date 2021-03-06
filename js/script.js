@@ -65,12 +65,12 @@ readArticle.forEach(element => {
 });
 
 
-
 // blog headlines code
 const headline = document.querySelectorAll('#headlines_ul li');
 const box_blue_btn = document.querySelectorAll('.box_blue_btn');
 const box_red_btn = document.querySelectorAll('.box_red_btn');
 const headline_h1 = document.querySelectorAll('#headline_h1');
+const the_second_blog = document.querySelector('.the_second_blog');
 
 headline.forEach(element => {
   element.addEventListener('click', () => {
@@ -83,7 +83,10 @@ headline.forEach(element => {
     for(let i=0; i<box_blue_btn.length; i++) {
       if(element.textContent === 'All'){
         box_blue_btn[i].parentElement.parentElement.style.display = 'block';
-
+        // loop to show all h1
+        for(let i=0; i<headline_h1.length; i++) {
+          headline_h1[i].style.display = 'block';
+        }
       } else {
 
         if(box_blue_btn[i].textContent === element.textContent) {

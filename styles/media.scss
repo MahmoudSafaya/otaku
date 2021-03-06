@@ -15,7 +15,6 @@
     z-index: 10;
     padding: 20px 0;
 
-
     nav{ 
       position: fixed;
       width: 100%;
@@ -27,13 +26,11 @@
       display: none;
   
       ul{
-        margin-top: 25px;
-        
+        margin-top: 25px;  
         li{
           margin: 50px 0px;
           font-size: 18px;
           display: block;
-  
           a{
             color: #010101;
             font-size: 22px;
@@ -77,7 +74,6 @@
     }
   }
 
-
   // style of the world section and other like
   .world_content,
   .gallery,
@@ -99,7 +95,6 @@
     }
   }
 
-
   //style of the subscribe section
   .subscribe{
     h1{
@@ -114,7 +109,6 @@
       }
     }
   }
-
 
   // style of footer
   footer{
@@ -192,7 +186,6 @@
     .small_blog_imgs{
       width: 85%;
       float: none;
-
       .box{
         margin: 20px 0px;
         .box_image,
@@ -200,7 +193,6 @@
           width: 100%;
           margin: 0px;
         }
-
         &:first-of-type,
         &:nth-of-type(5){
           margin-left: 0px;
@@ -218,15 +210,12 @@
     h1{
       font-size: 38px;
     }
-  
     .question{
-  
       h2{
         display: inline-block;
         font-size: 18px;
         width: 90%;
       }
-  
       span{
         float: right;
         font-size: 32px;
@@ -234,8 +223,6 @@
       }
     }
   }
-
-
 
 
   // ................... Any article style ..............
@@ -270,5 +257,155 @@
       font-size: 42px;
     }
   }
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+
+  .container{
+    width: 90%;
+  }
+  .fa-search{
+    margin-left: 60px;
+  }
+  // landing content responsive
+  .landing_content{
+    .after_nav{
+      margin: 50px auto;
+      .info_section{
+        width: 60%;
+        margin-right: 25px;
+        p{
+          font-size: 28px;
+        }
+      }
+      .slider_section_div{
+        margin-bottom: 25px !important;
+        p{
+          margin: 8px 0 !important;
+        }
+      }
+      // slider bullets
+      .to_slide_bullets{
+        margin: 0px auto 20px;
+      }
+    }
+  }
+
+  // style of the world section and other like
+  .world_content,
+  .gallery,
+  .the_blog,
+  .the_second_blog{
+    .boxies_container,
+    .wide_blog_imgs,
+    .small_blog_imgs{
+      .box{
+        width: 29%;
+        &:first-of-type,
+        &:nth-of-type(5){
+          margin-left: 10px;
+        }
+        .box_image{
+          width: 100%;
+          height: 150px;
+        }
+      }
+    }
+  }
+
+
+
+  // ............... Blog responsive .............
+  .headlines{
+    ul{
+      li{
+        padding: 8px 12px;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  // style of the blog
+  .the_blog,
+  .the_second_blog{
+    .wide_blog_imgs{
+      width: 60%;
+      float: left;
+
+      .box{
+        width: 60%;
+      }
+      .box:first-of-type{
+        .box_image:first-of-type{
+          height: 280px;
+        }
+      }
+    }
+
+    .small_blog_imgs{
+      float: right;
+      .box{
+        width: 85%;
+        margin: 20px;
+
+        .box_image,
+        .box_info_div{
+          width: 100%;
+        }
+
+        &:first-of-type,
+        &:nth-of-type(5){
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  
+  .the_second_blog{
+    .second_wide_blog_imgs{
+      width: 60%;
+    }
+
+    .second_small_blog_imgs{
+      width: 37%;
+
+      .box{
+        width: 100%;
+        margin: 20px 0px;
+        &:first-of-type{
+          margin-left: 0px;
+        }
+      }
+
+    }
+  }
+
+  
+  // ................The Article .................
+  .the_article{
+
+    .wide_article_imgs{
+      width: 60% !important;
+      .box{
+        width: 100%;
+        &:first-of-type{
+          margin: 0px;
+        }
+      }
+    }
+  
+    .small_article_imgs{
+      width: 38%;
+      margin-left: 0px;
+      .other_article{
+        margin: 20px 0;
+      }
+    }
+  }
+  
 
 }
