@@ -111,21 +111,20 @@ headline.forEach(element => {
 });
 
 // Featured and Popular headline btns
-const unique = document.querySelectorAll('#unique');
-unique.forEach(env => {
-  env.addEventListener('click', () => {
-    //show featured or popular boxes
-    for(let i=0; i<box_red_btn.length; i++){
-      if(box_red_btn[i].textContent === env.textContent){
-        box_red_btn[i].parentElement.parentElement.style.display = 'block';
-        // loop to delete all h1
-        for(let i=0; i<headline_h1.length; i++) {
-          headline_h1[i].style.display = 'none';
-        }
-      } else {
-        //hide featured or popular boxes
-        box_red_btn[i].parentElement.parentElement.style.display = 'none';
+const unique = document.querySelector('#unique');
+unique.addEventListener('click', () => {
+  //show featured or popular boxes
+  for(let i=0; i<box_red_btn.length; i++){
+    if(box_red_btn[i].textContent === unique.textContent){
+      box_red_btn[i].parentElement.parentElement.style.display = 'block';
+
+      // loop to delete all h1
+      for(let i=0; i<headline_h1.length; i++) {
+        headline_h1[i].style.display = 'none';
       }
+    } else {
+      //hide featured or popular boxes
+      box_red_btn[i].parentElement.parentElement.style.display = 'none';
     }
-  })
-})
+  }
+});

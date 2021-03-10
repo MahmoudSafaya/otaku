@@ -234,8 +234,10 @@ img {
   }
   .headlines {
     margin: 100px auto 40px;
+    padding-top: 40px;
   }
   .headlines ul {
+    margin-top: 20px;
     float: none;
     display: block;
     text-align: center;
@@ -325,7 +327,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) and (min-width: 521px) {
   .container {
     width: 90%;
   }

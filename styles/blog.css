@@ -110,7 +110,7 @@ body {
 }
 
 .headlines {
-  margin: 40px auto;
+  margin: 80px auto 40px !important;
 }
 
 .headlines h1 {
